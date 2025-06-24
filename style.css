@@ -684,3 +684,31 @@ th {
   padding: 8px;
   font-weight: normal;
 }
+
+/*List side by side*/
+.skills-container {
+    display: flex;
+    gap: 80px;
+}
+
+.skill-group {
+    margin: 0;
+}
+
+.skill-group ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.skill-group li {
+    margin-bottom: 8px;
+}
+
+.skill-group p {
+    margin: 20px 0 5px 0; 
+}
+
+.divider {
+    margin: 20px 0;
+}
