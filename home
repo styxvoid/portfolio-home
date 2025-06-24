@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+  /*Left Sidebar*/
+
+  .sidebarLeft {
+    position: fixed;
+    left: -245px;
+    margin: 40px;
+  }
+
+  #status {
+    top: 30%;
+  }
+
+  #poll {
+    top: 47%;
+    font-size: 15px;
+  }
+
+  #bars {
+    top: 63%;
+  }
+
+  #player {
+    top: 70%;
+  }
+
+
+  /*Right Sidebar*/
+
+  .sidebarRight {
+    position: fixed;
+    right: -25px;
+    margin: 40px;
+  }
+
+  #clover {
+    top: 30%;
+  }
+
+  #clock {
+    font-size: 32px;
+    top: 56%;
+    color: var(--colour1);
+  }
+
+  #date-container {
+    font-size: 40px;
+    top: 50%;
+    color: var(--colour1);
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  #blogPosts {
+    top: 62%;
+  }
+
+  /*POST LIST STYLE*/
+
+  #postlistdiv ul {
+    font-size: 14px;
+    padding: 0;
+    list-style-type: none;
+    line-height: 1.5em;
+  }
+
+  #recentpostlistdiv ul {
+    font-size: 14px;
+    padding: 0;
+    list-style-type: none;
+    line-height: 1.5em;
+  }
+
+  .moreposts {
+    font-size: 14px;
+    margin-top: 0.2em;
+    line-height: 1.5em;
+  }
+</style>
+
+<head>
+  <title>The Polar Refresh</title>
+  <link rel="icon" href="./images/favicon.png" type="image/x-icon" />
+  <meta name="description" content="A place where I can talk about anything">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <link href="./style/style.css" rel="stylesheet" type="text/css" media="all">
+</head>
+
+<body>
+  <script src="effect.js"></script>
+  <div id="container">
+    <div id="header">
+      <div id="top">...</div>
+      <div id="navigate">This site requires JavaScript!</div>
+    </div>
+    <div>
+
+      <div id="sidebarleft" class="sidebarLeft fade-in">
+        <div id="status" class="status sidebar">
+          <center>
+            <h2>Status</h2>
+            <img src="./images/resources/online.gif">
+          </center>
+
+          <hr class="divider">
+          <p><b>Mood</b>: Motivated</p>
+          <p><b>Currently</b>: Drawing</p>
+          <p><b>Playing:</b> Mahjong</p>
+          <p><b>Eating</b>: Sour keys</p>
+
+        </div>
+        <form method="post" action="https://poll.pollcode.com/21459953">
+          <div id="poll" class="sidebar poll">
+            <div style="padding:2px 0px 4px 2px;">
+              <p><b>What is your favourite season?</b></p>
+              <hr class="divider">
+            </div>
+            <input type="radio" name="answer" value="1" id="answer214599531" style="float:left;" />
+            <label for="answer214599531" style="float:left;width:155px;margin-left:4px;font-size:18px;">Winter</label>
+            <div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="2" id="answer214599532"
+              style="float:left;" />
+            <label for="answer214599532" style="float:left;width:155px;margin-left:4px;font-size:18px;">Spring</label>
+            <div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="3" id="answer214599533"
+              style="float:left;" />
+            <label for="answer214599533" style="float:left;width:155px;margin-left:4px;font-size:18px;">Summer</label>
+            <div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="4" id="answer214599534"
+              style="float:left;" />
+            <label for="answer214599534" style="float:left;width:155px;margin-left:4px;font-size:18px;">Autumn</label>
+            <div style="clear:both;height:2px;"></div>
+            <hr class="divider">
+            <div align="center" style="padding:3px;">
+              <input type="submit" value=" Vote ">&nbsp;<input type="submit" name="view" value=" View ">
+            </div>
+            <div align="right" style="font-size:10px;""><a href=" https://pollcode.com/">pollcode.com</a></div>
+        </form>
+      </div>
+      <div id="bars" class="sidebar bars">
+        <center> <img src="./images/resources/whitebars.gif"></center>
+      </div>
+
+      <div id="player" class="player sidebar">
+        <center>
+          <h4>♫ Now Playing ♫</h4>
+          <hr class="divider">
+          <iframe style="border: 0; width: 320px; height: 320px;" src="https://bandcamp.com/EmbeddedPlayer/album=1478834626/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/track=3850779290/transparent=true/" seamless><a href="https://anplode.bandcamp.com/album/echoes-of-frost">Echoes of Frost by Anplode</a></iframe>
+        </center>
+      </div>
+    </div>
+
+    <div id="sidebarRight" class="sidebarRight fade-in">
+      <center>
+        <div id="clover" class="clover sidebar"><img src="./images/resources/Clover.gif">
+          <script language="javascript" type="text/javascript"
+            src="//counter1.fc2.com/counter.php?id=39930221&main=1"></script>
+          <noscript><img src="//counter1.fc2.com/counter_img.php?id=39930221&main=1" /></noscript>
+          <hr class="divider">
+          <p><b>Clover is lost!</b></p>
+          <div class="btn-group"><a href="/sitemap.html"><button style="width:100px;">Sitemap</button></div></a>
+        </div>
+        <div id="date-container" class="sidebar"></div>
+        <div id="clock" class="sidebar clock"></div>
+      </center>
+      <div id="blogPosts" class="sidebar blogPosts">
+        <div id="recentpostlistdiv"></div>
+        <hr class="divider">
+        <div class="btn-group" style="width:100%; margin-top:20px"><a href="/blog.html"><button style="width:100px">See
+              More</button></a></li>
+        </div>
+      </div>
+  </div>
+
+  <div id="content">
+    <img src="./images/slush png.png" style="width:450px; height:auto; float: left; z-index: 1; position: relative;">
+    <div id="box">
+      <div id="content" style="padding: 20px; width:300px; height:210px">
+        <center>
+          <h1>Hey there!</h1>
+          <hr class="divider">
+          <p>Welcome to</p>
+          <p><b> The Polar Refresh! </b></p>
+          <p style="margin-bottom:10px">Hope you enjoy your time here! Remember to stay hydrated as well!</p>
+          <div class="btn-group"><a href="/guestbook.html"><button style="width:120px;">Guestbook</button></a></div>
+      </div>
+    </div>
+    </center>
+
+    <center>
+      <p>-----------------</p>
+    </center>
+    <div id="box2">
+      <img src="./images/Clover.JPG"
+        style="float:right;margin:20px;height:340px;width:auto;border-radius:10px;box-shadow: 0.5rem 0.5rem #000000;  border: 1px solid #00abe5; outline: 1px solid black;">
+      <div id="content" style="padding: 20px;">
+        <h1>Introduction</h1>
+        <hr class="divider">
+        <div style="height:250px;line-height:3em;overflow:auto;padding:5px;" class="scrollbar">
+          <p>Hello there!</p>
+          <p>
+            I created this website to not only compile my art and OCs but to also compile a lot of stuff I like! Other
+            than drawing,
+            I like to collect a lot of things that I find interesting. Collections may vary to CDs, 3D puzzles,
+            interesting software, tech, art books, and even more!
+          </p>
+          <p>
+            For the theme of my website, I wanted to try something that was similiar to Rainmeter widgets. I've always
+            liked the somewhat transparent and glass look of some of them!
+          </p>
+          <p> Thank you for visiting!</p>
+        </div>
+        <hr class="divider">
+        <center>
+          <p>(´｡• ω •｡`)</p>
+        </center>
+      </div>
+    </div>
+
+    <center>
+      <p>✩₊˚.⋆☾⋆⁺₊✧</p>
+    </center>
+    <div id="box2">
+      <div style="height:400px;line-height:3em;overflow:auto;padding:5px;" class="scrollbar">
+        <img src="./images/polarsnackshack.gif" style="float:left;margin:10px;box-shadow: 0.4rem 0.4rem #000000;">
+        <h1>Website Updates</h1>
+        <hr class="divider">
+        <p><b>04.12.2025</b></p>
+        <p>Did a few design updates! Felt it didnt look water-y enough. Now the buttons and sidebars look tastier! :D
+          Hopefully nothing broke!</p>
+        <p><b>02.21.2025</b></p>
+        <p>A web garden has been created! Check the new <a href="./webgarden-greenhouse.html">greenhouse</a> here! A
+          Collection page
+          has also been added and currently under construction ^^ </p>
+        <p><b>02.14.2025</b></p>
+        <p>A splash/landing page has been created! Also replaced the gallery code with a better functioning one.
+        </p>
+        <p><b>01.29.2025</b></p>
+        <p>Sitemap has been created for a little easier navigation! I'll make it look a little prettier later haha</p>
+        <p><b>12.30.2024</b></p>
+        <p>An <a href="/gallery/art-archive.html">Art Archive</a> section has now been added to the Gallery!
+        </p>
+        <p><b>09.26.2024</b></p>
+        <p>After some slight confusing moments, I finally added an <a
+            href="https://slushienova.neocities.org/feed.xml">RSS Feed</a> to the website! You can follow it to see any
+          notable updates made to the website such as art, characters, blog posts, and more!
+        </p>
+        <p><b>09.17.2024</b></p>
+        <p>I finally made some large website updates! This website now has a working gallery, guestbook, and links page.
+          There's also a lot more features
+          on the front page now :D Thank you so much for your patience! My next goal now is to work on the character
+          pages
+          and to revise the blog page a bit more.
+          I may add a small chatroom. Seems pretty neat.</p>
+      </div>
+
+    </div>
+  </div> <!-- end of div id="content" -->
+  <div id="footer"></div>
+  </div> <!-- end of div id="container" -->
+  <script src="./script.js"></script>
+</body>
+
+</html>
